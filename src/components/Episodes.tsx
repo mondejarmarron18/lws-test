@@ -8,7 +8,7 @@ type TProps = {
 const Episodes: FC<TProps> = ({ anime }) => {
   return (
     <div className="flex-1 max-w-[900px]">
-      <div className="flex justify-between font-medium py-5">
+      <div className="flex justify-between font-medium py-5 mb-5">
         <div>Episodes</div>
         <div>Season 1</div>
       </div>
@@ -17,7 +17,7 @@ const Episodes: FC<TProps> = ({ anime }) => {
         {[...Array(anime.episodes)].map((val, key) => (
           <EpisodeCard
             key={key}
-            episode={key}
+            episode={key + 1}
             image={anime.image}
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sit exercitationem ab minus odit quasi, vel nostrum aliquam rem qui a, modi aut tempore cumque?"
           />

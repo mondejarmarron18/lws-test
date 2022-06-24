@@ -8,6 +8,8 @@ const Header = () => {
   const [showNavBar, setShowNavBar] = useState(true);
 
   useLayoutEffect(() => {
+    setShowNavBar(window.innerWidth > 768);
+
     window.addEventListener("resize", () => {
       setShowNavBar(window.innerWidth > 768);
     });

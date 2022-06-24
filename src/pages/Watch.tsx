@@ -30,7 +30,7 @@ const Watch = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-10 text-white">
           <div className="mt-4 w-full lg:w-[400px] flex flex-col gap-5">
-            <TrendingCard anime={anime} className="w-full h-[300px]" />
+            <TrendingCard anime={anime} className="max-h-[300px] max-w-full" />
             <div className="text-sm w-full text-gray-400">
               {anime.description}
             </div>
